@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:text="BOOK NAME"
+            />
+        <TextView
+            android:id="@+id/Bookname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="#000000"
+            android:layout_margin="9dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:text="AUTHOR NAME"/>
+        <TextView
+            android:id="@+id/authorname"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_margin="9dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:text="publishedDate"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_margin="9dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:text="YEAR OF PUBLISHING"/>
+        <TextView
+            android:id="@+id/publishingyear"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_margin="9dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:text="link"/>
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:enabled="false"
+            android:layout_margin="9dp"/>
+    </LinearLayout>
+</LinearLayout>
