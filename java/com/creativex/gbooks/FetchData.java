@@ -31,7 +31,7 @@ public class FetchData extends AppCompatActivity {
         try {
             jsonResponse = makeHttpRequest(url);
         } catch (IOException e) {
-            // TODO Handle the IOException
+            Log.i(log_tag,"no json response");
         }
         FetchData f=new FetchData();
         ArrayList<BookContents> books = new ArrayList<>();
@@ -56,7 +56,7 @@ public class FetchData extends AppCompatActivity {
                 String title = volinfo.getString("title");
                 JSONArray authorname = volinfo.getJSONArray("authors");
                 //if(authorname.isNull(0)){
-                    Log.i(log_tag,"NULLL");
+                    //Log.i(log_tag,"NULLL");
                 //}
                 String author;
                 author=authorname.getString(0);
@@ -101,7 +101,7 @@ public class FetchData extends AppCompatActivity {
 
             }
         } catch (IOException e) {
-            Log.e(log_tag, "Problem retrieving the earthquake JSON results.", e);}
+            Log.e(log_tag, "Problem retrieving the results.", e);}
         finally {
             if (urlConnection != null) {
                 urlConnection.disconnect();
